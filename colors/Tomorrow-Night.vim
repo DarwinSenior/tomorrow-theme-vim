@@ -330,9 +330,12 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonRepeat", s:purple, "", "")
 	call <SID>X("pythonException", s:purple, "", "")
 	call <SID>X("pythonFunction", s:blue, "", "")
+    call <SID>X("pythonBuiltinFunc", s:blue, "", "")
 	call <SID>X("pythonPreCondit", s:purple, "", "")
 	call <SID>X("pythonRepeat", s:aqua, "", "")
+    call <SID>X("pythonDecorator", s:aqua, "", "")
 	call <SID>X("pythonExClass", s:orange, "", "")
+    call <SID>X("pythonImport", s:orange, "", "")
 
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")

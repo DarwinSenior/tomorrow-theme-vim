@@ -295,10 +295,19 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("vimCommand", s:red, "", "none")
 
 	" C Highlighting
-	call <SID>X("cType", s:yellow, "", "")
+	call <SID>X("cType", s:orange, "", "")
 	call <SID>X("cStorageClass", s:purple, "", "")
-	call <SID>X("cConditional", s:purple, "", "")
-	call <SID>X("cRepeat", s:purple, "", "")
+	call <SID>X("cConditional", s:green, "", "")
+	call <SID>X("cRepeat", s:green, "", "")
+    call <SID>X("cAnsiFunction", s:green, "", "")
+    call <SID>X("cAnsiName", s:orange, "", "")
+
+    " C++ Highlighting
+	call <SID>X("cppSTLfunction", s:green, "", "")
+	call <SID>X("cppSTLtype", s:orange, "", "")
+	call <SID>X("cCustomScope", s:red, "", "")
+	call <SID>X("cCustomClass", s:red, "", "")
+
 
 	" PHP Highlighting
 	call <SID>X("phpVarSelector", s:red, "", "")
@@ -347,9 +356,17 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" HTML Highlighting
 	call <SID>X("htmlTag", s:red, "", "")
-	call <SID>X("htmlTagName", s:red, "", "")
-	call <SID>X("htmlArg", s:red, "", "")
+	call <SID>X("htmlTagName", s:foreground, "", "")
+	call <SID>X("htmlArg", s:orange, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
+	call <SID>X("cssTagName", s:red, "", "")
+	call <SID>X("cssIdentifier", s:red, "", "")
+	call <SID>X("cssClassName", s:red, "", "")
+	call <SID>X("cssAttributeSelector", s:red, "", "")
+	call <SID>X("cssProp", s:blue, "", "")
+	call <SID>X("cssAttr", s:green, "", "")
+	call <SID>X("cssFunction", s:green, "", "")
+
 
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
